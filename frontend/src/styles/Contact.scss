@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&display=swap');
+
+.contact-premium {
+  background-color: #f3f4f6;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  overflow: hidden;
+
+  .bg-light-gray { background-color: #f3f4f6; }
+
+  .contact-sidebar-label {
+    width: 80px;
+    background-color: #f3f4f6;
+    z-index: 2;
+    border-color: rgba(0,0,0,0.05) !important;
+  }
+
+  .vertical-text {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    letter-spacing: 0.3em;
+  }
+
+  .tracking-widest { letter-spacing: 0.2em; }
+  .tracking-tighter { letter-spacing: -2px; }
+
+  .contact-card {
+    border: 1px solid rgba(0,0,0,0.02);
+    box-shadow: 0 40px 100px -20px rgba(0,0,0,0.05) !important;
+  }
+
+  .form-control-minimal {
+    width: 100%;
+    padding: 15px 18px;
+    background-color: #fff;
+    border: 1px solid #e5e7eb;
+    color: #111;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    
+    &:focus {
+      outline: none;
+      border-color: #000;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+    }
+  }
+
+  .btn-send {
+    background-color: #ff9d00;
+    color: #000;
+    border: none;
+    transition: all 0.3s cubic-bezier(0.2, 1, 0.3, 1);
+    
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(255, 157, 0, 0.2);
+      background-color: #ff8c00;
+    }
+  }
+
+  .geo-bg { 
+    pointer-events: none; 
+    opacity: 0.1; 
+  }
+
+  .geo-shape {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    border: 1px solid #000;
+    opacity: 0.2;
+    border-radius: 40%;
+    
+    &.shape-1 {
+      top: -10%;
+      left: 10%;
+      transform: rotate(45deg);
+      clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    }
+
+    &.shape-2 {
+      bottom: -10%;
+      right: 20%;
+      transform: rotate(-20deg);
+      clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    }
+  }
+}
+
+.hover-rotate:hover { transform: rotate(90deg); transition: transform 0.4s ease; }
+
+@media (max-width: 991px) {
+  .contact-premium {
+    .contact-sidebar-label { display: none !important; }
+    .container { margin-left: 0 !important; }
+    .display-3 { font-size: 3rem; }
+  }
+}

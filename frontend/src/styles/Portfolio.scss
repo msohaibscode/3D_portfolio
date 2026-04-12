@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
+
+.portfolio-perfect { 
+    font-family: 'Plus Jakarta Sans', sans-serif; 
+    height: 100vh; 
+    overflow: hidden; 
+    background: white; 
+
+    .no-wrap { white-space: nowrap; }
+
+    .tracking-tighter { letter-spacing: -2.5px; }
+    .tracking-widest { letter-spacing: 2px; }
+    .tracking-extreme { letter-spacing: 5px; }
+    .uppercase { text-transform: uppercase; }
+
+    .project-title-refined {
+        font-size: clamp(1.8rem, 4.5vw, 3.5rem);
+        line-height: 0.85;
+    }
+
+    .text-orange-premium { color: #fe8c00 !important; }
+
+    .btn-view-premium {
+        background-color: #fe8c00 !important;
+        color: black !important;
+        border: none;
+        letter-spacing: 1.5px;
+        font-size: 0.85rem;
+        transition: all 0.3s ease;
+    }
+
+    .arrow-box-nav { width: 42px; height: 42px; flex-shrink: 0; }
+    .vertical-text-label { writing-mode: vertical-rl; transform: rotate(180deg); }
+
+    .nav-btn-circle {
+        width: 44px; height: 44px;
+        border-radius: 50%; border: none;
+        background: black; color: white;
+        display: flex; align-items: center; justify-content: center;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover { transform: scale(1.1); background: #222; }
+    }
+}
+
+@media (max-width: 991px) {
+    .portfolio-perfect { 
+        height: auto; 
+        overflow: auto; 
+    }
+    .showcase-footer { 
+        flex-direction: column; 
+        height: auto; 
+    }
+    .controls-footer-box { 
+        width: 100%; 
+        order: -1; 
+        padding: 2rem !important; 
+    }
+    .main-info-area { 
+        padding: 3rem 2rem !important; 
+    }
+    .project-card-cinematic { 
+        min-width: 90vw !important; 
+        height: auto !important; 
+        aspect-ratio: 16/9; 
+    }
+}

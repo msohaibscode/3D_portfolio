@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
+
+.about-page {
+  background-color: #ffffff !important;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: #111;
+
+  .about-card {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.03);
+    transition: all 0.3s ease;
+    
+    &:hover {
+      border-color: #fe8c00;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.06);
+    }
+  }
+
+  .icon-container {
+    width: 50px;
+    height: 50px;
+    background-color: #fe8c00;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-bottom: 20px;
+  }
+
+  .li-dot {
+    width: 8px;
+    height: 8px;
+    background: #fe8c00;
+    border-radius: 50%;
+    margin-top: 6px;
+    box-shadow: 0 0 10px rgba(254, 140, 0, 0.3);
+  }
+
+  .duration-badge {
+    font-size: 0.65rem;
+    color: #fe8c00;
+    background: rgba(254, 140, 0, 0.1);
+    padding: 2px 10px;
+    border-radius: 10px;
+  }
+}
+
+.center-profile {
+  width: 280px;
+  height: 280px;
+  position: relative;
+  
+  .image-border-fancy {
+    width: 100%;
+    height: 100%;
+    border: 2px dashed rgba(254, 140, 0, 0.5);
+    border-radius: 50%;
+    padding: 10px;
+  }
+}
+
+.profile-shadow {
+  box-shadow: 0 0 30px rgba(254, 140, 0, 0.15);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-glow {
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  left: -25%;
+  top: -25%;
+  background: radial-gradient(circle, rgba(254, 140, 0, 0.05) 0%, transparent 70%);
+  z-index: -1;
+}
+
+.hover-scale {
+  transition: transform 0.3s ease;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.x-small {
+  font-size: 0.75rem;
+}
+
+@media (max-width: 991px) {
+  .center-profile {
+    width: 240px;
+    height: 240px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .center-profile {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .display-4 {
+    font-size: 2.5rem !important;
+  }
+  
+  .display-6 {
+    font-size: 1.5rem !important;
+  }
+
+  .about-page {
+    .container {
+      padding-left: 1.5rem !important;
+      padding-right: 1.5rem !important;
+    }
+  }
+}

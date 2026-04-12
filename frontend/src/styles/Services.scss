@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&display=swap');
+
+.services-page {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: #ffffff;
+  height: 100vh;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch; // For smooth mobile scrolling
+
+  .tracking-tighter { letter-spacing: -2.5px; }
+  .tracking-tight { letter-spacing: -1px; }
+
+  .service-card-v2 {
+    transition: all 0.4s cubic-bezier(0.2, 1, 0.3, 1);
+    
+    .hover-line {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 4px;
+      background-color: #000;
+      width: 0;
+      transition: width 0.5s cubic-bezier(0.2, 1, 0.3, 1);
+      z-index: 5;
+    }
+
+    &:hover {
+      .hover-line { width: 100%; }
+      
+      .arrow-icon-wrapper {
+        background-color: #000;
+        color: #fff;
+        transform: translateX(10px);
+      }
+
+      .content-wrap {
+        transform: translateY(-5px);
+        transition: transform 0.4s ease;
+      }
+    }
+  }
+
+  .arrow-icon-wrapper {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+    color: #999;
+    transition: all 0.4s ease;
+  }
+}
+
+.hover-rotate:hover { transform: rotate(90deg); transition: transform 0.4s ease; }
+
+@media (max-width: 991px) {
+  .services-page {
+    .display-4 { font-size: 3rem !important; }
+    .display-6 { font-size: 1.5rem !important; }
+  }
+}
+
+@media (max-width: 768px) {
+  .service-card-v2 { 
+    height: auto !important; 
+    padding: 2.5rem 1.5rem !important; 
+  }
+  .services-page {
+    .container {
+      padding-left: 1.2rem !important;
+      padding-right: 1.2rem !important;
+    }
+    .display-4 { font-size: 2.2rem !important; }
+  }
+}
