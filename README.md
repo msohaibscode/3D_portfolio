@@ -2,8 +2,6 @@
 
 A stunning, interactive 3D professional portfolio built with **React**, **Three.js**, and **Framer Motion**. This project features a full-stack architecture with a Node.js/Express backend, MongoDB integration, and AI-powered components.
 
-## 🚀 Live Demo
-*(Add your live link here, e.g., https://sohaib-portfolio.vercel.app)*
 
 ## ✨ Features
 
@@ -30,14 +28,6 @@ A stunning, interactive 3D professional portfolio built with **React**, **Three.
 -   **Mongoose** (ODM)
 -   **Google Generative AI** (Gemini)
 -   **Helmet** & **Cors** (Security)
-
-## 📦 Installation
-
-### 1. Clone the repository
-```bash
-git clone https://github.com/yourusername/sohaib-portfolio.git
-cd sohaib-portfolio
-```
 
 ### 2. Backend Setup
 ```bash
@@ -94,4 +84,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 This project is licensed under the ISC License.
 
 ---
-Developed with ❤️ by [Muhammad Sohaib](https://github.com/yourusername)
+Developed with ❤️ by [Muhammad Sohaib]
